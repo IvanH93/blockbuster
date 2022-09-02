@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_849476_blockbust_cliente</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>nuovo cliente</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// create new operator user
+	var user = new GlideRecord("sys_user");
+	user.initialize();
+	user.user_name = current.username.toString();
+	user.first_name = current.first_name.toString();
+	user.last_name = current.last_name.toString();
+	user.email = current.email.toString();
+	user.user_password.setDisplayValue(current.password.toString());
+	var new_user = user.insert();
+	
+	//get role for operator
+	var role = new GlideRecord("sys_user_role");
+	role.addQuery("name=x_849476_blockbust.cliente");
+	role.query();
+	if(role.next()){
+		//add role to the new user
+		var role_user= new GlideRecord("sys_user_has_role");
+		role_user.initialize();
+		role_user.user=new_user;
+		role_user.role= role.sys_id.toString();
+		if(role_user.insert()){
+			//after creating new user give ref in this table
+			current.user=new_user;
+			current.update();
+		}
+	}
+	
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-24 12:27:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7abc708d1b691dd0cc841f4a234bcb7d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>nuovo cliente</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope>
+        <sys_update_name>sys_script_7abc708d1b691dd0cc841f4a234bcb7d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 16:08:44</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=7abc708d1b691dd0cc841f4a234bcb7d"/>
+</record_update>

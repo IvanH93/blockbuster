@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <color>default</color>
+        <condition>gs.isLoggedIn()</condition>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph/>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>Home</label>
+        <order>100</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page display_value="blkb_home_default">37c52d911be95dd0cc841f4a234bcb13</sp_page>
+        <sp_rectangle_menu display_value="Blkb header menu">6d75a5911be95dd0cc841f4a234bcb7c</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 14:57:39</sys_created_on>
+        <sys_id>a0354eda1be55114cc841f4a234bcbb8</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Home</sys_name>
+        <sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_a0354eda1be55114cc841f4a234bcbb8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-30 20:38:21</sys_updated_on>
+        <table/>
+        <type>page</type>
+        <url>/</url>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=a0354eda1be55114cc841f4a234bcbb8"/>
+</record_update>

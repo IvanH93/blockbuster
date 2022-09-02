@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope) {
+    /* widget controller */
+    var c = this;
+    $scope.openRegisterForm = function(user) {
+        if (user == "op")
+            top.location.href = "?id=operator_register";
+        else if (user == "cus")
+            top.location.href = "?id=customer_register";
+    };
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.container{&#13;
+color:#000;&#13;
+  width:100%;&#13;
+  padding:0 30px;&#13;
+}&#13;
+&#13;
+.card-div{&#13;
+border:1px solid grey;&#13;
+  padding:10px;&#13;
+    margin:10px 0;&#13;
+  border-radius:8px;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>b_registrazione_utenti</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Registrazione Operatore/Cliente</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 10:56:24</sys_created_on>
+        <sys_id>4d3aa9951be95dd0cc841f4a234bcbf5</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Registrazione Operatore/Cliente</sys_name>
+        <sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope>
+        <sys_update_name>sp_widget_4d3aa9951be95dd0cc841f4a234bcbf5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 10:12:23</sys_updated_on>
+        <template><![CDATA[<div class="container">
+	<div class="info-div">
+    <h1>
+      Amministrazione utenti Blockbuster
+    </h1>
+  </div>
+  <div class="register_div">
+    <div class="card-div">
+      <h4>
+        Registra un nuovo operatore
+      </h4>
+      <buton class="btn btn-primary reg-btn" ng-click="openRegisterForm('op')">
+        Registra
+      </buton>
+    </div>
+    <div class="card-div">
+      <h4>
+        Registra un nuovo cliente
+      </h4>
+      <buton class="btn btn-primary reg-btn" ng-click="openRegisterForm('cus')">
+        Registra
+      </buton>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

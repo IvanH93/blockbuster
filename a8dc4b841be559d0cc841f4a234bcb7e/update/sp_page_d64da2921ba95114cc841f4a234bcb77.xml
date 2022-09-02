@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css>body .padding-top{&#13;
+  margin-top:-10px !important;&#13;
+}&#13;
+.col-md-12{&#13;
+  padding:0 !important;&#13;
+}</css>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>all_booking_list</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles/>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-28 17:52:15</sys_created_on>
+        <sys_id>d64da2921ba95114cc841f4a234bcb77</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>all_booking_list</sys_name>
+        <sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope>
+        <sys_update_name>sp_page_d64da2921ba95114cc841f4a234bcb77</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-30 08:04:17</sys_updated_on>
+        <title>All bookings </title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=d64da2921ba95114cc841f4a234bcb77"/>
+</record_update>

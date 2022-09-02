@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.openRequirePage=function(type){
+		if(type=="all")
+			top.location.href="?id=tutti_i_prodotti";
+		else if(type=="new")
+			top.location.href="?id=aggiungi_nuovo_prodotto&sys_id=04c4d9091be91dd0cc841f4a234bcb90 ";
+	}
+	
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.container{
+  color:#000;
+    width: 100%;
+}
+.card{
+  width: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 600px;
+  text-align: center;
+  box-shadow: 0px 0px 3px 1px #000;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>operator_home</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Operator Home</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	data.user_name=gs.getUserDisplayName();
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 12:13:37</sys_created_on>
+        <sys_id>8a36100a1ba11114cc841f4a234bcbf1</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Operator Home</sys_name>
+        <sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope>
+        <sys_update_name>sp_widget_8a36100a1ba11114cc841f4a234bcbf1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 13:25:24</sys_updated_on>
+        <template><![CDATA[<div class="container">
+  <hi>
+  	 Ciao {{data.user_name}}
+  </hi>
+  <h4>
+    Cosa vuoi fare?
+  </h4>
+</div>
+<div class="option-cards">
+  <div class="card" ng-click="openRequirePage('all')">
+   Visualizza tutti i prodotti
+  </div>
+  <div class="card" ng-click="openRequirePage('new')">
+    nuovo prodotto
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">ef85d4c61ba11114cc841f4a234bcb78</sp_column>
+        <sp_widget display_value="BB Home default">83a458861ba11114cc841f4a234bcb0e</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 12:10:35</sys_created_on>
+        <sys_id>799514c61ba11114cc841f4a234bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope>
+        <sys_update_name>sp_instance_799514c61ba11114cc841f4a234bcbae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 12:10:35</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=799514c61ba11114cc841f4a234bcbae"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</application>
+        <file_path/>
+        <instance_id>ec8f4136db8cf010ad8dd7c8f4961923</instance_id>
+        <instance_name>dev116254</instance_name>
+        <name>sp_instance_799514c61ba11114cc841f4a234bcbae</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">ef85d4c61ba11114cc841f4a234bcb78</sp_column><sp_widget display_value="BB Home default">83a458861ba11114cc841f4a234bcb0e</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-08-27 12:10:35</sys_created_on><sys_id>799514c61ba11114cc841f4a234bcbae</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package><sys_policy/><sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope><sys_update_name>sp_instance_799514c61ba11114cc841f4a234bcbae</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-08-27 12:10:35</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=799514c61ba11114cc841f4a234bcbae"/></record_update>]]></payload>
+        <payload_hash>-1931139168</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>acdc4b841be559d0cc841f4a234bcb80</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 12:10:35</sys_created_on>
+        <sys_id>ca9514c61ba11114cc841f4a234bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>182df36048e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 12:10:35</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>359514c699a11114a5c213147e262cb0</update_guid>
+        <update_guid_history>359514c699a11114a5c213147e262cb0:-1931139168</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">a469beab1b259514cc841f4a234bcbb9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-09-01 15:57:05</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>0a3b9644adca4e0892975e6494b9ab04</sys_id>
+        <sys_metadata>799514c61ba11114cc841f4a234bcbae</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope>
+        <sys_scope_delete display_value="">04ee4c5279c944cc9d34962f661c3a90</sys_scope_delete>
+        <sys_update_name>sp_instance_799514c61ba11114cc841f4a234bcbae</sys_update_name>
+        <sys_update_version display_value="sp_instance_799514c61ba11114cc841f4a234bcbae">ca9514c61ba11114cc841f4a234bcbb0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-01 15:57:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

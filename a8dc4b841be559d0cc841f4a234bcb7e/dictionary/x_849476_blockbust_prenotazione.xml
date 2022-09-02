@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Prenotazione" max_length="40" name="x_849476_blockbust_prenotazione" sizeclass="5" type="collection">
+        <element label="Cliente" max_length="32" name="cliente" read_only="true" reference="x_849476_blockbust_cliente" type="reference"/>
+        <element label="Costo" max_length="40" name="costo" read_only="true" type="price"/>
+        <element label="Data cancellazione" max_length="40" name="data_cancellazione" read_only="true" type="glide_date_time"/>
+        <element display="true" label="Data restituzione" max_length="40" name="data_restituzione" read_only="true" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Prodotto" max_length="32" name="prodotto" read_only="true" reference="x_849476_blockbust_prodotto" type="reference"/>
+        <element choice="3" default="prenotato" label="Stato" max_length="40" name="stato" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Prenotato" sequence="0" value="prenotato"/>
+                <element inactive_on_update="false" label="Cancellato" sequence="1" value="cancellato"/>
+                <element inactive_on_update="false" label="Restituito" sequence="2" value="restituito"/>
+            </choice>
+        </element>
+        <element choice="1" label="Tipo prodotto" max_length="40" name="tipo_prodotto" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Film" sequence="0" value="film"/>
+                <element inactive_on_update="false" label="Videogame" sequence="1" value="videogame"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="cliente"/>
+        </index>
+        <index name="index2">
+            <element name="prodotto"/>
+        </index>
+    </element>
+</database>

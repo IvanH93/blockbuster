@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Cliente" max_length="40" name="x_849476_blockbust_cliente" sizeclass="9" type="collection">
+        <element default="83" label="Credito" max_length="40" name="credito" read_only="true" type="price"/>
+        <element label="Email" max_length="40" name="email" read_only="true" type="string"/>
+        <element label="First name" max_length="40" name="first_name" type="string"/>
+        <element label="Last name" max_length="40" name="last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="password" max_length="40" name="password" read_only="true" type="password"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" display="true" label="User" max_length="32" name="user" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Username" max_length="40" name="username" read_only="true" type="string"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

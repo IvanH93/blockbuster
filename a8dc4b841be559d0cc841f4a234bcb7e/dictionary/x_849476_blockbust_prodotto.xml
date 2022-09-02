@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Prodotto" max_length="40" name="x_849476_blockbust_prodotto" sizeclass="9" type="collection">
+        <element label="Costo" max_length="40" name="costo" type="price"/>
+        <element default="true" label="Disponibilita" max_length="40" name="disponibilita" type="boolean"/>
+        <element choice="1" dependent="tipo_prodotto" dependent_on_field="tipo_prodotto" label="Genere" max_length="40" name="genere" type="choice" use_dependent_field="true">
+            <choice>
+                <element dependent_value="film" inactive_on_update="false" label="Avventura" value="avventura"/>
+                <element dependent_value="film" inactive_on_update="false" label="Fantascienza" value="fantascienza"/>
+                <element dependent_value="film" inactive_on_update="false" label="Fantasy" value="fantasy"/>
+                <element dependent_value="videogame" inactive_on_update="false" label="RPG" value="rpg"/>
+                <element dependent_value="videogame" inactive_on_update="false" label="Sparatutto" value="sparatutto"/>
+                <element dependent_value="videogame" inactive_on_update="false" label="Strategia" value="strategia"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Operatore" max_length="32" name="operatore" read_only="true" reference="x_849476_blockbust_operatore" type="reference"/>
+        <element choice="1" label="Tipo prodotto" mandatory="true" max_length="40" name="tipo_prodotto" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Film" sequence="0" value="film"/>
+                <element inactive_on_update="false" label="Videogame" sequence="1" value="videogame"/>
+            </choice>
+        </element>
+        <element display="true" label="Titolo" max_length="100" name="titolo" type="string"/>
+        <index name="index">
+            <element name="operatore"/>
+        </index>
+    </element>
+</database>

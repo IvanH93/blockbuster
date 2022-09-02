@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
+    <sp_row action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <sp_column/>
+        <sp_container display_value="Customer Register - Container 1">4b7eab391b6dddd0cc841f4a234bcb96</sp_container>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 09:21:34</sys_created_on>
+        <sys_id>8eeeaf711b211114cc841f4a234bcb84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope>
+        <sys_update_name>sp_row_8eeeaf711b211114cc841f4a234bcb84</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 09:21:34</sys_updated_on>
+    </sp_row>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</application>
+        <file_path/>
+        <instance_id>ec8f4136db8cf010ad8dd7c8f4961923</instance_id>
+        <instance_name>dev116254</instance_name>
+        <name>sp_row_8eeeaf711b211114cc841f4a234bcb84</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="Customer Register - Container 1">4b7eab391b6dddd0cc841f4a234bcb96</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-08-27 09:21:34</sys_created_on><sys_id>8eeeaf711b211114cc841f4a234bcb84</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package><sys_policy/><sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope><sys_update_name>sp_row_8eeeaf711b211114cc841f4a234bcb84</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-08-27 09:21:34</sys_updated_on></sp_row></record_update>]]></payload>
+        <payload_hash>1417396648</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>acdc4b841be559d0cc841f4a234bcb80</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 09:21:34</sys_created_on>
+        <sys_id>46eeaf711b211114cc841f4a234bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>182de9b45870000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 09:21:34</sys_updated_on>
+        <type>Row</type>
+        <update_guid>8eeeaf7125211114c7ba0e90a89c0d85</update_guid>
+        <update_guid_history>8eeeaf7125211114c7ba0e90a89c0d85:1417396648</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1">a6b09c821ba11114cc841f4a234bcb00</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 11:49:19</sys_created_on>
+        <sys_db_object display_value="" name="sp_row">sp_row</sys_db_object>
+        <sys_id>2fd09737e9ae4ed0acb617477ca9a100</sys_id>
+        <sys_metadata>8eeeaf711b211114cc841f4a234bcb84</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope>
+        <sys_scope_delete display_value="">04ee4c5279c944cc9d34962f661c3a90</sys_scope_delete>
+        <sys_update_name>sp_row_8eeeaf711b211114cc841f4a234bcb84</sys_update_name>
+        <sys_update_version display_value="sp_row_8eeeaf711b211114cc841f4a234bcb84">46eeaf711b211114cc841f4a234bcb86</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 11:49:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

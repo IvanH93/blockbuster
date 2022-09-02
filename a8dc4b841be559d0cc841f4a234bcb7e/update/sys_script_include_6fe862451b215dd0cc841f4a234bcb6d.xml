@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_849476_blockbust.prenota_film_o_videogame_utils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>prenota_film_o_videogame_utils</name>
+        <script><![CDATA[var prenota_film_o_videogame_utils = Class.create();
+prenota_film_o_videogame_utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getCostAndReturnTime: function() {
+        var pro = new GlideRecord("x_849476_blockbust_prodotto");
+        if (pro.get(this.getParameter("sysparm_prodottoID"))) {
+            return JSON.stringify({
+                "costo": pro.costo.toString(),
+                "data_restituzione": this.getDataRestituzione(),
+            });
+        }
+    },
+    getDataRestituzione: function() {
+        var d = new GlideDateTime();
+        d.addDaysLocalTime(30);
+        return d.getLocalDate().toString() + " " + d.getTime().toString().split(" ")[1];
+    },
+    getOperator: function() {
+        var op = new GlideRecord("x_849476_blockbust_operatore");
+        if (op.get("user", gs.getUserID())) {
+            return op.sys_id.toString();
+        }
+    },
+    getCliente: function() {
+        var op = new GlideRecord("x_849476_blockbust_cliente");
+        if (op.get("user", gs.getUserID())) {
+            return op.sys_id.toString();
+        }
+    },
+
+    type: 'prenota_film_o_videogame_utils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-24 20:21:54</sys_created_on>
+        <sys_id>6fe862451b215dd0cc841f4a234bcb6d</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>prenota_film_o_videogame_utils</sys_name>
+        <sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope>
+        <sys_update_name>sys_script_include_6fe862451b215dd0cc841f4a234bcb6d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-28 17:38:33</sys_updated_on>
+    </sys_script_include>
+</record_update>

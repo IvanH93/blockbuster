@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="stato" table="x_849476_blockbust_prenotazione" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>stato</element>
+            <name>x_849476_blockbust_prenotazione</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-23 15:26:46</sys_created_on>
+            <sys_id>f42c54781b69d9d0cc841f4a234bcb4f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>stato</sys_name>
+            <sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope>
+            <sys_update_name>sys_choice_x_849476_blockbust_prenotazione_stato</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-23 15:26:46</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stato</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Prenotato</label>
+            <language>en</language>
+            <name>x_849476_blockbust_prenotazione</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-23 15:26:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b02c54781b69d9d0cc841f4a234bcb4f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-23 15:26:46</sys_updated_on>
+            <value>prenotato</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stato</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancellato</label>
+            <language>en</language>
+            <name>x_849476_blockbust_prenotazione</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-23 15:26:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3c2c54781b69d9d0cc841f4a234bcb50</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-23 15:26:46</sys_updated_on>
+            <value>cancellato</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stato</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Restituito</label>
+            <language>en</language>
+            <name>x_849476_blockbust_prenotazione</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-23 15:26:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b82c54781b69d9d0cc841f4a234bcb51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-23 15:26:46</sys_updated_on>
+            <value>restituito</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

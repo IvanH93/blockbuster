@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope) {
+    /* widget controller */
+    var c = this;
+		$scope.type_selected="all";
+    $scope.status_selected = "all";
+    $scope.show_cards = true;
+		c.data.prodotto_list=c.data.prodotti;
+
+    $scope.showSelectedcard = function(id) {
+        $scope.show_cards = false;
+        $scope.iframeURL = "/x_849476_blockbust_prenotazione.do?sys_id=" + id;
+    }
+
+	$scope.filterChange=function(){
+		c.data.type=$scope.type_selected;
+		c.data.stato =$scope.status_selected;
+		c.data.action="filter_pro";
+		c.server.update().then(function(){
+			c.data.prodotto_list=c.data.prodotti;
+		});
+		
+	}
+
+
+
+
+    $scope.showCards = function() {
+			c.data.type=$scope.type_selected;
+		c.data.stato =$scope.status_selected;
+		c.data.action="filter_pro";
+		c.server.update().then(function(){
+			c.data.prodotto_list=c.data.prodotti;
+			 $scope.show_cards = true;
+		});
+       
+    }
+
+
+
+
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: lightgrey;
+  color: #000;
+  padding:10px 20px;
+}
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 50px;
+  margin-right: 100px;
+}
+.bodywrapper{
+  height: calc(100vh - 120px);
+    overflow-y:auto;
+}
+.all_cards {
+  display:flex;
+  flex-wrap: wrap;
+  padding:0 2rem;
+  justify-content: space-evenly;
+}
+.pro_card{
+  flex-basis:25%;
+  margin:10px;
+  width: 270px;
+  height:160px;
+  color: #000;
+  padding: 10px;
+  box-shadow: 0px 0px 4px 0px #000;
+  border-radius: 10px;
+}
+
+.iframe_div{
+height:calc(100vh - 215px)
+}
+#mainframe{
+width:100%;
+  height:80%;
+  border:none;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>all_bookings_list</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>All bookings list</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    /* populate the 'data' object */
+    /* e.g., data.table = $sp.getValue('table'); */
+
+    data.prodotti = [];
+    var pro = new GlideRecord("x_849476_blockbust_prenotazione");
+    pro.addQuery("cliente.userDYNAMIC90d1921e5f510100a9ad2572f2b477fe");
+		//if clientscript filters
+		if(input){
+			if(input.action=="filter_pro"){
+				if(input.type!="all"){
+					pro.addQuery("tipo_prodotto="+input.type);
+				}
+				if(input.stato!="all"){
+					pro.addQuery("stato="+input.stato);
+				}
+			}
+		}
+    pro.query();
+    while (pro.next()) {
+        data.prodotti.push({
+            "number": pro.number.toString(),
+            "tipo_prodotto": pro.tipo_prodotto.toString(),
+            "tipo_prodotto_label": pro.tipo_prodotto.getDisplayValue(),
+						"prodotto":pro.prodotto.getDisplayValue(),
+						"genere":pro.genere.getDisplayValue(),
+            "costo": pro.costo.getDisplayValue(),
+            "stato": pro.stato.toString(),
+            "stato_label": pro.stato.getDisplayValue(),
+            "sys_id": pro.sys_id.toString()
+        });
+    }
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-30 06:04:17</sys_created_on>
+        <sys_id>9d8ed23a1ba5d114cc841f4a234bcb83</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name>All bookings list</sys_name>
+        <sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope>
+        <sys_update_name>sp_widget_9d8ed23a1ba5d114cc841f4a234bcb83</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-01 10:50:21</sys_updated_on>
+        <template><![CDATA[<div>
+<div class="header">
+  <div style="display:flex;align-items:center;">
+    <label style="width:100%">Cerca</label>
+    <input class="form-control" type="text" placeholder="cerca" ng-model="pr" />
+   </div>
+   <div class="filters">
+     <div style="display:flex;align-items:center;column-gap:10px">
+        <label>Film/VideoGame</label>
+        <select class="form-control" ng-model="type_selected" ng-change=filterChange()>
+          <option value="all">Tutti</option>
+        	<option value="film">Film</option>
+        	<option value="videogame">Video Game</option>
+      	</select>
+      </div>
+     <div style="display:flex;align-items:center;column-gap:10px">
+       <label>Stato</label>
+       <select class="form-control" ng-model="status_selected" ng-change=filterChange()>
+         <option value="all">Tutti</option>
+         <option value="prenotato">Prenotato</option>
+         <option value="cancellato">Cancellato</option>
+         <option value="restituito">Restituito</option>
+       </select>
+     </div>
+   </div> 
+  </div>
+  <div class="bodywrapper" ng-show="show_cards">
+    <div class="all_cards" >
+     <div class="pro_card" ng-repeat="prodotto in data.prodotto_list | filter:pr" ng-click="showSelectedcard(prodotto.sys_id)">
+     <h4><strong>Numero prenotazione: {{prodotto.number}}</strong></h4>
+       <h4><strong>Tipo Prodotto: {{prodotto.tipo_prodotto_label}}</strong></h4>
+       <h4><strong>Prodotto: {{prodotto.prodotto}}</strong></h4>
+       <h4><strong>Genere: {{prodotto.genere}}</strong></h4>
+        <div style="display:flex;justify-content:space-between">
+         <h4><strong>Costo: {{prodotto.costo}}</strong></h4>
+         <h4><strong>Stato: {{prodotto.stato_label}}</strong></h4>
+       </div>
+     </div>
+    <div ng-show="data.prodotto_list.length==0">
+        <h1>
+          Nessuna prenotazione trovata
+        </h1>
+      </div>
+    </div>
+  </div>
+  
+  <div ng-show="!show_cards" style="padding:20px;">
+    <div>
+      <button class="btn btn-primary" ng-click="showCards()" style="margin-bottom:20px">
+        Indietro
+      </button>
+    </div>
+    <div class="iframe_div">
+      <iframe id="mainframe" ng-src="{{iframeURL}}"></iframe>  
+    </div>
+    
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

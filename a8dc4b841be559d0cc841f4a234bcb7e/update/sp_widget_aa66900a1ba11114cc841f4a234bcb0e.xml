@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+	
+	$scope.openRequirePage=function(type){
+		if(type=="all")
+			top.location.href="?id=all_booking_list";
+		else if(type=="new")
+			top.location.href="?id=add_new_booking&sys_id=1cf225c11b2d1dd0cc841f4a234bcbee";
+	}
+	
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.container{&#13;
+  color:#000;&#13;
+    width: 100%;&#13;
+}&#13;
+.card{&#13;
+  width: 300px;&#13;
+  margin: 20px auto;&#13;
+  padding: 10px;&#13;
+  font-size: 24px;&#13;
+  font-weight: 600px;&#13;
+  text-align: center;&#13;
+  box-shadow: 0px 0px 3px 1px #000;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>customer_home</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Customer home</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	data.user_name=gs.getUserDisplayName();
+	
+	var cus= new GlideRecord("x_849476_blockbust_cliente");
+	if(cus.get("user",gs.getUserID())){
+		data.credito=cus.credito.getDisplayValue();
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 12:14:26</sys_created_on>
+        <sys_id>aa66900a1ba11114cc841f4a234bcb0e</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Customer home</sys_name>
+        <sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope>
+        <sys_update_name>sp_widget_aa66900a1ba11114cc841f4a234bcb0e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-30 06:45:51</sys_updated_on>
+        <template><![CDATA[<div class="container">
+  <hi>
+  	 Ciao {{data.user_name}}
+  </hi>
+  <h4>
+    Credito residuo <strong>{{c.data.credito}}</strong>
+  </h4>
+  <h2 class="text-center">
+    Cosa vuoi fare oggi?
+  </h2>
+</div>
+<div class="option-cards">
+  <div class="card" ng-click="openRequirePage('all')">
+   Tutte le mie prenotazioni
+  </div>
+  <div class="card" ng-click="openRequirePage('new')">
+    nuova prenotazione
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

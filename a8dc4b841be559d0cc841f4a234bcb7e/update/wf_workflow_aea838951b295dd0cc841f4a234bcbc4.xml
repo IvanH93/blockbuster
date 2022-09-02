@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"activities":{},"stages":{},"ends":["aaa8f0d51b295dd0cc841f4a234bcb9c"],"subflows":[]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>a2a8f0d51b295dd0cc841f4a234bcb9b,74c874d51b295dd0cc841f4a234bcb81,cfca3c191b295dd0cc841f4a234bcb36,b66f0d191b295dd0cc841f4a234bcb8c,d3dfc95d1b695dd0cc841f4a234bcbcf,252051591b295dd0cc841f4a234bcbf5,aaa8f0d51b295dd0cc841f4a234bcb9c,1aa0919d1b695dd0cc841f4a234bcb1d</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>a2a8f0d51b295dd0cc841f4a234bcb9b,74c874d51b295dd0cc841f4a234bcb81,cfca3c191b295dd0cc841f4a234bcb36,b66f0d191b295dd0cc841f4a234bcb8c,d3dfc95d1b695dd0cc841f4a234bcbcf,252051591b295dd0cc841f4a234bcbf5,aaa8f0d51b295dd0cc841f4a234bcb9c,1aa0919d1b695dd0cc841f4a234bcb1d</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Handle bookings</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">a2a8f0d51b295dd0cc841f4a234bcb9b</start>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 06:48:22</sys_created_on>
+        <sys_id>bf183c951b295dd0cc841f4a234bcb26</sys_id>
+        <sys_mod_count>118</sys_mod_count>
+        <sys_updated_by>Cliente</sys_updated_by>
+        <sys_updated_on>2022-08-28 17:49:34</sys_updated_on>
+        <table>x_849476_blockbust_prenotazione</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="Handle bookings">aea838951b295dd0cc841f4a234bcbc4</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>Handle bookings</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 06:48:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aea838951b295dd0cc841f4a234bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Handle bookings</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope>
+        <sys_update_name>wf_workflow_aea838951b295dd0cc841f4a234bcbc4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 06:48:22</sys_updated_on>
+        <table>x_849476_blockbust_prenotazione</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Aggiungi credito cliente  seguito a cancellazione</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:30:58</sys_created_on>
+        <sys_id>252051591b295dd0cc841f4a234bcbf5</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:35:46</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Handle bookings">bf183c951b295dd0cc841f4a234bcb26</workflow_version>
+        <x>377</x>
+        <y>346</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=252051591b295dd0cc841f4a234bcbf5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>252051591b295dd0cc841f4a234bcbf5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:30:58</sys_created_on>
+        <sys_id>a92051591b295dd0cc841f4a234bcbf5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:32:32</sys_updated_on>
+        <value>var cli = new GlideRecord("	x_849476_blockbust_cliente");&#13;
+if (cli.get("sys_id=" + current.cliente.toString())) {&#13;
+    cli.credito = cli.credito + current.costo;&#13;
+    cli.update();&#13;
+}</value>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>252051591b295dd0cc841f4a234bcbf5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:30:58</sys_created_on>
+        <sys_id>a92051591b295dd0cc841f4a234bcbf5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:32:32</sys_updated_on>
+        <value>var cli = new GlideRecord("	x_849476_blockbust_cliente");&#13;
+if (cli.get("sys_id=" + current.cliente.toString())) {&#13;
+    cli.credito = cli.credito + current.costo;&#13;
+    cli.update();&#13;
+}</value>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Aggiungi credito cliente  seguito a cancellazione">252051591b295dd0cc841f4a234bcbf5</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:30:58</sys_created_on>
+        <sys_id>612051591b295dd0cc841f4a234bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:30:58</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 06:48:22</sys_created_on>
+        <sys_id>a2a8f0d51b295dd0cc841f4a234bcb9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 06:48:22</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Handle bookings">bf183c951b295dd0cc841f4a234bcb26</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a2a8f0d51b295dd0cc841f4a234bcb9b"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">a2a8f0d51b295dd0cc841f4a234bcb9b</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 06:48:22</sys_created_on>
+        <sys_id>eea8f0d51b295dd0cc841f4a234bcb9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 06:48:22</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Cancellazione prenotazione</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:28:28</sys_created_on>
+        <sys_id>b66f0d191b295dd0cc841f4a234bcb8c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:35:25</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Handle bookings">bf183c951b295dd0cc841f4a234bcb26</workflow_version>
+        <x>170</x>
+        <y>315</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b66f0d191b295dd0cc841f4a234bcb8c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b66f0d191b295dd0cc841f4a234bcb8c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:28:28</sys_created_on>
+        <sys_id>f09f855d1b695dd0cc841f4a234bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:28:28</sys_updated_on>
+        <value>stato=cancellato^EQ</value>
+        <variable display_value="Condition">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b66f0d191b295dd0cc841f4a234bcb8c</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:28:28</sys_created_on>
+        <sys_id>fc9f855d1b695dd0cc841f4a234bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:28:28</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="Condition script">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b66f0d191b295dd0cc841f4a234bcb8c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:28:28</sys_created_on>
+        <sys_id>f09f855d1b695dd0cc841f4a234bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:28:28</sys_updated_on>
+        <value>stato=cancellato^EQ</value>
+        <variable display_value="Condition">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b66f0d191b295dd0cc841f4a234bcb8c</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:28:28</sys_created_on>
+        <sys_id>fc9f855d1b695dd0cc841f4a234bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:28:28</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="Condition script">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Cancellazione prenotazione">b66f0d191b295dd0cc841f4a234bcb8c</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:28:28</sys_created_on>
+        <sys_id>f89f855d1b695dd0cc841f4a234bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:28:28</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 06:48:22</sys_created_on>
+        <sys_id>aaa8f0d51b295dd0cc841f4a234bcb9c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:29:25</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Handle bookings">bf183c951b295dd0cc841f4a234bcb26</workflow_version>
+        <x>795</x>
+        <y>164</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=aaa8f0d51b295dd0cc841f4a234bcb9c"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Restituzione articolo</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:27:26</sys_created_on>
+        <sys_id>cfca3c191b295dd0cc841f4a234bcb36</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:36:01</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Handle bookings">bf183c951b295dd0cc841f4a234bcb26</workflow_version>
+        <x>171</x>
+        <y>1</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=cfca3c191b295dd0cc841f4a234bcb36"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cfca3c191b295dd0cc841f4a234bcb36</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:27:26</sys_created_on>
+        <sys_id>255fc9191b295dd0cc841f4a234bcbf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:27:26</sys_updated_on>
+        <value>stato=restituito^EQ</value>
+        <variable display_value="Condition">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cfca3c191b295dd0cc841f4a234bcb36</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:27:26</sys_created_on>
+        <sys_id>2d5fc9191b295dd0cc841f4a234bcbf0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:27:26</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="Condition script">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cfca3c191b295dd0cc841f4a234bcb36</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:27:26</sys_created_on>
+        <sys_id>255fc9191b295dd0cc841f4a234bcbf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:27:26</sys_updated_on>
+        <value>stato=restituito^EQ</value>
+        <variable display_value="Condition">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>cfca3c191b295dd0cc841f4a234bcb36</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:27:26</sys_created_on>
+        <sys_id>2d5fc9191b295dd0cc841f4a234bcbf0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:27:26</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="Condition script">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Restituzione articolo">cfca3c191b295dd0cc841f4a234bcb36</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:27:26</sys_created_on>
+        <sys_id>215fc9191b295dd0cc841f4a234bcbf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:27:26</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Scalo credito cliente </name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 06:53:59</sys_created_on>
+        <sys_id>74c874d51b295dd0cc841f4a234bcb81</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:35:57</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Handle bookings">bf183c951b295dd0cc841f4a234bcb26</workflow_version>
+        <x>49</x>
+        <y>170</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=74c874d51b295dd0cc841f4a234bcb81"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74c874d51b295dd0cc841f4a234bcb81</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 06:53:59</sys_created_on>
+        <sys_id>24f9b4191b295dd0cc841f4a234bcb5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 06:53:59</sys_updated_on>
+        <value>var cli = new GlideRecord("	x_849476_blockbust_cliente");&#13;
+if(cli.get("sys_id="+current.cliente.toString())){&#13;
+	cli.credito=cli.credito-current.costo;&#13;
+	cli.update();&#13;
+}</value>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>74c874d51b295dd0cc841f4a234bcb81</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 06:53:59</sys_created_on>
+        <sys_id>24f9b4191b295dd0cc841f4a234bcb5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 06:53:59</sys_updated_on>
+        <value>var cli = new GlideRecord("	x_849476_blockbust_cliente");&#13;
+if(cli.get("sys_id="+current.cliente.toString())){&#13;
+	cli.credito=cli.credito-current.costo;&#13;
+	cli.update();&#13;
+}</value>
+        <variable display_value="Script">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Scalo credito cliente ">74c874d51b295dd0cc841f4a234bcb81</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 06:53:59</sys_created_on>
+        <sys_id>e0f9b4191b295dd0cc841f4a234bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 06:53:59</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set valore prenotazione cancellato</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:33:13</sys_created_on>
+        <sys_id>1aa0919d1b695dd0cc841f4a234bcb1d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:35:32</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Handle bookings">bf183c951b295dd0cc841f4a234bcb26</workflow_version>
+        <x>629</x>
+        <y>324</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=1aa0919d1b695dd0cc841f4a234bcb1d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa0919d1b695dd0cc841f4a234bcb1d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:33:13</sys_created_on>
+        <sys_id>1ea0919d1b695dd0cc841f4a234bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:33:13</sys_updated_on>
+        <value/>
+        <variable display_value="Set these values">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1aa0919d1b695dd0cc841f4a234bcb1d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:33:13</sys_created_on>
+        <sys_id>1ea0919d1b695dd0cc841f4a234bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:33:13</sys_updated_on>
+        <value/>
+        <variable display_value="Set these values">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set valore prenotazione cancellato">1aa0919d1b695dd0cc841f4a234bcb1d</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:33:13</sys_created_on>
+        <sys_id>52a0919d1b695dd0cc841f4a234bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:33:13</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set valore prenotazione restituito</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:30:09</sys_created_on>
+        <sys_id>d3dfc95d1b695dd0cc841f4a234bcbcf</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:35:30</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Handle bookings">bf183c951b295dd0cc841f4a234bcb26</workflow_version>
+        <x>580</x>
+        <y>2</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=d3dfc95d1b695dd0cc841f4a234bcbcf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d3dfc95d1b695dd0cc841f4a234bcbcf</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:30:09</sys_created_on>
+        <sys_id>25ffc95d1b695dd0cc841f4a234bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:30:09</sys_updated_on>
+        <value/>
+        <variable display_value="Set these values">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>d3dfc95d1b695dd0cc841f4a234bcbcf</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:30:09</sys_created_on>
+        <sys_id>25ffc95d1b695dd0cc841f4a234bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:30:09</sys_updated_on>
+        <value/>
+        <variable display_value="Set these values">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set valore prenotazione restituito">d3dfc95d1b695dd0cc841f4a234bcbcf</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:30:09</sys_created_on>
+        <sys_id>edffc95d1b695dd0cc841f4a234bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:30:09</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">edffc95d1b695dd0cc841f4a234bcbd9</condition>
+        <from display_value="Set valore prenotazione restituito">d3dfc95d1b695dd0cc841f4a234bcbcf</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:30:37</sys_created_on>
+        <sys_id>001051591b295dd0cc841f4a234bcbf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:30:37</sys_updated_on>
+        <to display_value="End">aaa8f0d51b295dd0cc841f4a234bcb9c</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">215fc9191b295dd0cc841f4a234bcbf2</condition>
+        <from display_value="Restituzione articolo">cfca3c191b295dd0cc841f4a234bcb36</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:30:34</sys_created_on>
+        <sys_id>130091591b295dd0cc841f4a234bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:30:34</sys_updated_on>
+        <to display_value="Set valore prenotazione restituito">d3dfc95d1b695dd0cc841f4a234bcbcf</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">eea8f0d51b295dd0cc841f4a234bcb9b</condition>
+        <from display_value="Begin">a2a8f0d51b295dd0cc841f4a234bcb9b</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 06:56:26</sys_created_on>
+        <sys_id>5c8a34d51b295dd0cc841f4a234bcb82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 06:56:26</sys_updated_on>
+        <to display_value="Scalo credito cliente ">74c874d51b295dd0cc841f4a234bcb81</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">612051591b295dd0cc841f4a234bcbf6</condition>
+        <from display_value="Aggiungi credito cliente  seguito a cancellazione">252051591b295dd0cc841f4a234bcbf5</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:34:02</sys_created_on>
+        <sys_id>5ed0d15d1b695dd0cc841f4a234bcb3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:34:02</sys_updated_on>
+        <to display_value="Set valore prenotazione cancellato">1aa0919d1b695dd0cc841f4a234bcb1d</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">e0f9b4191b295dd0cc841f4a234bcb5e</condition>
+        <from display_value="Scalo credito cliente ">74c874d51b295dd0cc841f4a234bcb81</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:27:38</sys_created_on>
+        <sys_id>606fc9191b295dd0cc841f4a234bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:27:38</sys_updated_on>
+        <to display_value="Restituzione articolo">cfca3c191b295dd0cc841f4a234bcb36</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">52a0919d1b695dd0cc841f4a234bcb1e</condition>
+        <from display_value="Set valore prenotazione cancellato">1aa0919d1b695dd0cc841f4a234bcb1d</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:34:10</sys_created_on>
+        <sys_id>8ce05d5d1b695dd0cc841f4a234bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:34:10</sys_updated_on>
+        <to display_value="End">aaa8f0d51b295dd0cc841f4a234bcb9c</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">e0f9b4191b295dd0cc841f4a234bcb5e</condition>
+        <from display_value="Scalo credito cliente ">74c874d51b295dd0cc841f4a234bcb81</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:28:34</sys_created_on>
+        <sys_id>c69f055d1b695dd0cc841f4a234bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:28:34</sys_updated_on>
+        <to display_value="Cancellazione prenotazione">b66f0d191b295dd0cc841f4a234bcb8c</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">f89f855d1b695dd0cc841f4a234bcbc3</condition>
+        <from display_value="Cancellazione prenotazione">b66f0d191b295dd0cc841f4a234bcb8c</from>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 08:32:52</sys_created_on>
+        <sys_id>d590955d1b695dd0cc841f4a234bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 08:32:52</sys_updated_on>
+        <to display_value="Aggiungi credito cliente  seguito a cancellazione">252051591b295dd0cc841f4a234bcbf5</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-25 06:48:22</sys_created_on>
+        <sys_id>e6a838951b295dd0cc841f4a234bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-25 06:48:22</sys_updated_on>
+        <workflow_version display_value="Handle bookings">bf183c951b295dd0cc841f4a234bcb26</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=aea838951b295dd0cc841f4a234bcbc4^sys_id!=bf183c951b295dd0cc841f4a234bcb26">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="DELETE" element="ref_user" table="x_849476_blockbust_operatore">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes/>
+        <audit>false</audit>
+        <calculation/>
+        <choice>0</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label>Ref User</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>true</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>ref_user</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="Reference">reference</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <name>x_849476_blockbust_operatore</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-23 12:21:27</sys_created_on>
+        <sys_id>c6b17b6c1ba5d9d0cc841f4a234bcbc3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Ref User</sys_name>
+        <sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope>
+        <sys_update_name>sys_dictionary_x_849476_blockbust_operatore_ref_user</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-23 20:20:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</application>
+        <file_path/>
+        <instance_id>ec8f4136db8cf010ad8dd7c8f4961923</instance_id>
+        <instance_name>dev116254</instance_name>
+        <name>sys_dictionary_x_849476_blockbust_operatore_ref_user</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="ref_user" table="x_849476_blockbust_operatore"><active>true</active><array>false</array><array_denormalized>false</array_denormalized><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Ref User</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>true</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>ref_user</element><element_reference>false</element_reference><foreign_database/><function_definition/><function_field>false</function_field><internal_type display_value="Reference">reference</internal_type><mandatory>false</mandatory><max_length>32</max_length><name>x_849476_blockbust_operatore</name><next_element/><primary>false</primary><read_only>true</read_only><read_roles/><reference display_value="" name="sys_user">sys_user</reference><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><sizeclass/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-08-23 12:21:27</sys_created_on><sys_id>c6b17b6c1ba5d9d0cc841f4a234bcbc3</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Ref User</sys_name><sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package><sys_policy/><sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope><sys_update_name>sys_dictionary_x_849476_blockbust_operatore_ref_user</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-08-23 20:20:06</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+        <payload_hash>965442542</payload_hash>
+        <record_name>Operatore.Ref User</record_name>
+        <reverted_from/>
+        <source>acdc4b841be559d0cc841f4a234bcb80</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-23 20:20:06</sys_created_on>
+        <sys_id>ad4f15b41b6dd9d0cc841f4a234bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>182cc5cc0620000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-23 20:20:06</sys_updated_on>
+        <type>Dictionary</type>
+        <update_guid>e54f15b4656dd9d0964f5b91d6061786</update_guid>
+        <update_guid_history>e54f15b4656dd9d0964f5b91d6061786:965442542,16ec1df00d6dd9d053e12cf2c9a24f30:26804649,1ab17b6c55a5d9d09491e382a97b84e9:-2141906794,deb17b6cada5d9d0dea224d260130ad8:-821897945</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-27 15:59:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary">sys_dictionary</sys_db_object>
+        <sys_id>19049fc440ac4a398dc804051bec4bf1</sys_id>
+        <sys_metadata>c6b17b6c1ba5d9d0cc841f4a234bcbc3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ref User</sys_name>
+        <sys_package display_value="Blockbuster" source="x_849476_blockbust">a8dc4b841be559d0cc841f4a234bcb7e</sys_package>
+        <sys_parent display_value="Operatore">4a117f2c1ba5d9d0cc841f4a234bcbba</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Blockbuster">a8dc4b841be559d0cc841f4a234bcb7e</sys_scope>
+        <sys_scope_delete display_value="">04ee4c5279c944cc9d34962f661c3a90</sys_scope_delete>
+        <sys_update_name>sys_dictionary_x_849476_blockbust_operatore_ref_user</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_x_849476_blockbust_operatore_ref_user">ad4f15b41b6dd9d0cc841f4a234bcb86</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-27 15:59:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
